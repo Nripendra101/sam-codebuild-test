@@ -32,7 +32,10 @@ def lambda_handler(event, context):
     #     print(e)
 
     #     raise e
-
+    a=3
+    b=6
+    c=a+b
+    print(f"the sum of {a} and {b} is {c}")
     return {
         "statusCode": 200,
         "body": json.dumps({
