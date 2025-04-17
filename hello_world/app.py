@@ -3,7 +3,7 @@ import pandas as pd
 
 
 def lambda_handler(event, context):
-    count=event['count']
+    count=int(event['count'])
     data=[]
     for i in range(count):
         data.append(i*10)
