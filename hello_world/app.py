@@ -7,10 +7,10 @@ def lambda_handler(event, context):
     data=[]
     for i in range(count):
         data.append(i*10)
-    df=pd.dataframe(data,Columns=['Numbers'])
+    df=pd.DataFrame(data,columns=['Numbers'])
     print('data:')
     print(df)
-    
+
     return {
         "statusCode": 200,
         "body": json.dumps({
